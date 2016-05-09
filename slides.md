@@ -2,19 +2,15 @@
 <br />
 <br />
 # Nomad
-<center>May 10th, 2016</center>
+**<center>May 10th, 2016</center>**
 <br />
 <br />
 <br />
-Bastiaan Bakker [bastiaan@nauts.io](mailto:bastiaan@nauts.io)   
-Erik Veld [erik@nauts.io](mailto:erik@nauts.io)   
-Mark van Holsteijn [mark@nauts.io](mailto:mark@nauts.io)
+[bastiaan@nauts.io](mailto:bastiaan@nauts.io)   
+[erik@nauts.io](mailto:erik@nauts.io)   
+[mark@nauts.io](mailto:mark@nauts.io)
 
 !SLIDE
-<!-- .slide: data-background="#6C1D5F" -->
-# Nomad
-
-!SUB
 Nomad is a tool for **managing a cluster of machines and running applications on them**. Nomad **abstracts away machines** and the location of applications, and instead **enables users to declare what they want to run** and Nomad handles where they should run and how to run them.
 
 !SUB
