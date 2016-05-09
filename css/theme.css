@@ -49,8 +49,14 @@ Headers
   word-wrap: break-word;
 }
 
-.reveal section[data-background="#6C1D5F"], .reveal section[data-background="#6C1D5F"] h1, .reveal section[data-background="#6C1D5F"] a {
+.reveal section[data-background="#6C1D5F"], .reveal section[data-background="#6C1D5F"] h1 {
+  font-size: 3em;
   color: #EFEFEF;
+}
+
+.reveal section[data-background="#6C1D5F"] a {
+  color: #F5F5F5;
+  font-style: italic;
   text-decoration: none;
 }
 
@@ -142,7 +148,7 @@ Other
 Links
 */
 .reveal a {
-  color: #6C1D5F;
+  color: #20B2A6;
   text-decoration: none;
 }
 .reveal a:hover {}
