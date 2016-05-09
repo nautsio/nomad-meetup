@@ -12,6 +12,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Hack';
+  src: url('../fonts/hack-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /*
 Global styles
 */
@@ -90,6 +97,7 @@ Other
 
 .reveal strong, .reveal b {
   font-weight: bold;
+  color: #544E5F;
 }
 
 .reveal em, .reveal i {
@@ -131,7 +139,17 @@ Other
 .reveal blockquote {}
 .reveal q {}
 
-.reveal pre {}
+.reveal pre {
+  display: block;
+  margin: 30px auto;
+  text-align: left;
+  font-size: 0.9em;
+  font-family: "Hack", monospace;
+  color: #999;
+  line-height: 1.5em;
+  word-wrap: break-word;
+}
+
 .reveal code {}
 
 .reveal table {}
