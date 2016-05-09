@@ -36,10 +36,6 @@ Nomad is a tool for **managing a cluster of machines and running applications on
 - **Task Driver**: A Driver represents the basic means of executing your Tasks.
 
 !SLIDE
-# The setup
-![Setup](img/setup.png)
-
-!SLIDE
 <!-- .slide: data-background="#6C1D5F" -->
 # Jobs
 
