@@ -4,13 +4,13 @@
 
 @font-face {
   font-family: 'Montserrat';
-  src: url('fonts/montserrat-bold.ttf') format('truetype');
+  src: url('../fonts/montserrat-bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: 'Roboto Slab';
-  src: url('fonts/robotoslab-regular.ttf') format('truetype');
+  src: url('../fonts/robotoslab-regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -314,7 +314,7 @@ body {
   display: block;
 }
 div[role=application]:after {
-  background: url(img/cargonaut.svg);
+  background: url(../img/cargonaut.svg);
   position: fixed;
   z-index: 30;
   width: 26vh;

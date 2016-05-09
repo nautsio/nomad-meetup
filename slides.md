@@ -17,19 +17,19 @@ Nomad is a tool for **managing a cluster of machines and running applications on
 
 !SUB
 # Architecture
-![Architecture](/img/architecture.png)
+![Architecture](img/architecture.png)
 
 !SUB
 # Phase 1: Evaluation
-![Evaluation](/img/evaluation.png)
+![Evaluation](img/evaluation.png)
 
 !SUB
 # Phase 2: Planning
-![Planning](/img/planning.png)
+![Planning](img/planning.png)
 
 !SUB
 # Phase 3: Allocation
-![Allocation](/img/allocation.png)
+![Allocation](img/allocation.png)
 
 !SUB
 - **Job, Task & Taskgroup**: A Job is a specification of tasks that Nomad should run. It consists of Taskgroups, which themselves contain one ore more Tasks.
@@ -40,7 +40,7 @@ Nomad is a tool for **managing a cluster of machines and running applications on
 
 !SLIDE
 # The setup
-![Setup](/img/setup.png)
+![Setup](img/setup.png)
 
 !SLIDE
 # Jobs
@@ -302,7 +302,7 @@ $ nomad run sysdig.nomad
 !SUB
 # Sysdig Explore Console
 
-![Sysdig Console](/img/sysdig-explore.png)
+![Sysdig Console](img/sysdig-explore.png)
 
 
 !SLIDE
