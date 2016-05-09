@@ -2,7 +2,6 @@
 <br />
 <br />
 # Nomad
-**<center>May 10th, 2016</center>**
 <br />
 <br />
 <br />
