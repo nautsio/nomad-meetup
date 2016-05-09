@@ -49,8 +49,9 @@ Headers
   word-wrap: break-word;
 }
 
-.reveal section[data-background="#6C1D5F"] h1 {
+.reveal section[data-background="#6C1D5F"], .reveal section[data-background="#6C1D5F"] h1, .reveal section[data-background="#6C1D5F"] a {
   color: #EFEFEF;
+  text-decoration: none;
 }
 
 .reveal h1 {
