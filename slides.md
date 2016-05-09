@@ -6,7 +6,7 @@
 <br />
 <br />
 Bastiaan Bakker [bastiaan@nauts.io](mailto:bastiaan@nauts.io)   
-Erik Veld [erik@nauts.io](mailto:erik@nauts.io)
+Erik Veld [erik@nauts.io](mailto:erik@nauts.io)   
 Mark van Holsteijn [mark@nauts.io](mailto:mark@nauts.io)
 
 !SLIDE
