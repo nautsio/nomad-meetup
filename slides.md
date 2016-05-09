@@ -1,3 +1,4 @@
+<!-- .slide: data-background="#6C1D5F" -->
 <br />
 <br />
 # Nomad
@@ -10,6 +11,7 @@ Erik Veld [erik@nauts.io](mailto:erik@nauts.io)
 Mark van Holsteijn [mark@nauts.io](mailto:mark@nauts.io)
 
 !SLIDE
+<!-- .slide: data-background="#6C1D5F" -->
 # Nomad
 
 !SUB
@@ -43,6 +45,7 @@ Nomad is a tool for **managing a cluster of machines and running applications on
 ![Setup](img/setup.png)
 
 !SLIDE
+<!-- .slide: data-background="#6C1D5F" -->
 # Jobs
 
 !SUB
@@ -245,6 +248,7 @@ job "helloworld" {
 doc: [/docs/jobspec/index.html](https://www.nomadproject.io/docs/jobspec/index.html)
 
 !SLIDE
+<!-- .slide: data-background="#6C1D5F" -->
 # Monitoring with Sysdig
 
 *“Sysdig Cloud is the first and only __monitoring, alerting, and troubleshooting
@@ -306,6 +310,7 @@ $ nomad run sysdig.nomad
 
 
 !SLIDE
+<!-- .slide: data-background="#6C1D5F" -->
 # Auto discovery
 - Uses Consul to expose services and works **without bootstrapping**
 - Defined **inside the job description**
@@ -328,6 +333,7 @@ service {
 doc: [/docs/jobspec/servicediscovery.html](https://www.nomadproject.io/docs/jobspec/servicediscovery.html)
 
 !SLIDE
+<!-- .slide: data-background="#6C1D5F" -->
 # Resource management
 
 In order to schedule jobs on the right nodes, Nomad needs to know which resources
@@ -397,6 +403,7 @@ resources {
 
 
 !SLIDE
+<!-- .slide: data-background="#6C1D5F" -->
 # Things don't always go well in real life
 
 !SUB

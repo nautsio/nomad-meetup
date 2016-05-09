@@ -139,7 +139,11 @@ Other
 
 /*
 Links
-*/.reveal a {}
+*/
+.reveal a {
+  color: #6C1D5F;
+  text-decoration: none;
+}
 .reveal a:hover {}
 
 /*
