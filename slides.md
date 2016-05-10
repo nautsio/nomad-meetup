@@ -148,7 +148,7 @@ doc: [/docs/http/index.html](https://www.nomadproject.io/docs/http/index.html)
 !SUB
 # Where is our job?
 ```
-$ curl -s $NOMAD_ADDR/v1/job/helloworld/allocations | jq .
+$ curl -s $NOMAD_ADDR/v1/job/helloworld-v1/allocations | jq .
 {
   ...
 }
