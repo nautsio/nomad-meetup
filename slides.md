@@ -80,9 +80,9 @@ job "helloworld" {
     max_parallel = 1
   }
 
-  group "helloworld" {
+  group "hello-group" {
     count = 1
-    task "helloworld" {
+    task "hello-task" {
       driver = "docker"
       config {
         image = "b.gcr.io/kuar/helloworld:1.0.0"
@@ -157,7 +157,7 @@ do
     | .Networks[0].IP + ":" + (.Networks[0].DynamicPorts[0].Value | tostring)'
 done
 
-$ ./get_job_address.sh helloworld helloworld
+$ ./get_job_address.sh helloworld hello-task
 10.20.30.8:42957
 ```
 
@@ -225,13 +225,12 @@ job "helloworld" {
     max_parallel = 1
   }
 
-  group "helloworld" {
+  group "hello-group" {
     count = 5
-    task "helloworld" {
+    task "hello-task" {
       driver = "docker"
       config {
         image = "cargonauts/helloworld:v2"
-
 ...
 ```
 doc: [/docs/jobspec/index.html](https://www.nomadproject.io/docs/jobspec/index.html)
