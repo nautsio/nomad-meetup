@@ -1,15 +1,17 @@
 <!-- .slide: data-background="#6C1D5F" -->
 <center>![Nomad](img/xebia.svg)</center>
 <br />
-<dl>
-  <dt>**Bastiaan Bakker**</dt><dd>*[bbakker@xebia.com](mailto:bbakker@xebia.com)*</dd>
-</dl>
-<dl>
-  <dt>**Mark van Holsteijn**</dt><dd>*[mvanholstein@xebia.com](mvanholstein@xebia.com)*</dd>
-</dl>
-<dl>
-  <dt>**Erik Veld**</dt><dd>*[eveld@xebia.com](eveld@xebia.com)*</dd>
-</dl>
+<table>
+  <tr>
+    <td>**Bastiaan Bakker**</td><td>*[bbakker@xebia.com](mailto:bbakker@xebia.com)*</td>
+  </tr>
+  <tr>
+    <td>**Mark van Holsteijn**</td><td>*[mvanholstein@xebia.com](mvanholstein@xebia.com)*</td>
+  </tr>
+  <tr>
+    <td>**Erik Veld**</td><td>*[eveld@xebia.com](eveld@xebia.com)*</td>
+  </tr>
+</table>
 
 !SLIDE
 <!-- .slide: data-background="#6C1D5F" -->
