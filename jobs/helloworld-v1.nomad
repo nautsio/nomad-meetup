@@ -20,8 +20,9 @@ job "helloworld-v1" {
       resources {
         cpu = 100
         memory = 200
+        mbits = 1
         network {
-        port "http" {}
+          port "http" {}
         }
       }
     }
