@@ -395,3 +395,6 @@ f99014c9  sys1        bbakker-nomad-02      system  false  ready
 !SUB
 # Preemptible instances
 Since losing a machine is not critical anymore, we can take advantage of the node-drain feature to use **preemptible instances** at our cloud provider. This will call node-drain **30 seconds** before the node shuts down and **moves all the applications** to healthy nodes.
+
+!SLIDE
+<center>![HashiConf](img/hashiconf.png)</center>
