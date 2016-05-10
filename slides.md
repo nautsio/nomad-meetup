@@ -1,9 +1,9 @@
 <!-- .slide: data-background="#6C1D5F" -->
 <center>![Nomad](img/xebia.svg)</center>
 <br />
-**Bastiaan Bakker**  &nbsp;&nbsp;&nbsp;*[bbakker@xebia.com](mailto:bbakker@xebia.com)*   
+**Bastiaan Bakker**  &nbsp;&nbsp;&nbsp;&nbsp;*[bbakker@xebia.com](mailto:bbakker@xebia.com)*   
 **Mark van Holsteijn**  *[mvanholstein@xebia.com](mvanholstein@xebia.com)*   
-**Erik Veld**  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*[eveld@xebia.com](eveld@xebia.com)*
+**Erik Veld**  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*[eveld@xebia.com](eveld@xebia.com)*
 
 !SLIDE
 <!-- .slide: data-background="#6C1D5F" -->
