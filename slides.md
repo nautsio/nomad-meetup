@@ -376,7 +376,8 @@ curl -s -X POST $NOMAD_ADDR/v1/node/$NODE_ID/drain?enable=true > /dev/null
 
 echo wait for drain of all allocations
 for t in {0..59} ; do
-	ALLOCS=$(curl -s $NOMAD_ADDR/v1/node/$NODE_ID/allocations | jq '[.[] | select(.ClientStatus == "running")] | length')
+	ALLOCS=$(curl -s $NOMAD_ADDR/v1/node/$NODE_ID/allocations \
+    | jq '[.[] | select(.ClientStatus == "running")] | length')
 	echo remaining allocs is $ALLOCS
 	if [ "0" == "$ALLOCS" ] ; then
 		echo node drain completed
