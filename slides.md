@@ -7,10 +7,10 @@
     <td>**Bastiaan Bakker**</td><td>*[bbakker@xebia.com](mailto:bbakker@xebia.com)*</td>
   </tr>
   <tr>
-    <td>**Mark van Holsteijn**</td><td>*[mvanholstein@xebia.com](mvanholstein@xebia.com)*</td>
+    <td>**Mark van Holsteijn**</td><td>*[mvanholstein@xebia.com](mailto:mvanholstein@xebia.com)*</td>
   </tr>
   <tr>
-    <td>**Erik Veld**</td><td>*[eveld@xebia.com](eveld@xebia.com)*</td>
+    <td>**Erik Veld**</td><td>*[eveld@xebia.com](mailto:eveld@xebia.com)*</td>
   </tr>
 </table>
 </center>
@@ -89,7 +89,7 @@ doc: [/docs/jobspec/index.html](https://www.nomadproject.io/docs/jobspec/index.h
 
 !SUB
 ```
-job "helloworld" {
+job "helloworld-v1" {
   datacenters = ["dc1"]
   type = "service"
 
@@ -103,8 +103,8 @@ job "helloworld" {
     task "hello-task" {
       driver = "docker"
       config {
-        image = "b.gcr.io/kuar/helloworld:1.0.0"
-        port_map { http = 80 }
+        image = "eveld/helloworld:1.0.0"
+        port_map { http = 8080 }
       }
       resources {
         cpu = 100
@@ -122,7 +122,7 @@ $ export NOMAD_ADDR=http://nomad-01.stack.gce.nauts.io:4646
 $ nomad run helloworld-v1.nomad
 ==> Monitoring evaluation "3d823c52-929a-fa8b-c50d-1ac4d00cf6b7"
     Evaluation triggered by job "hellloworld-v1"
-    Allocation "f67a-72a4-5a13" created: node "5b7c-a959-dfd9", group "hello"
+    Allocation "f67a-72a4-5a13" created: node "5b7c-a959-dfd9", group "hello-group"
     Evaluation status changed: "pending" -> "complete"
 ==> Evaluation "3d823c52-929a-fa8b-c50d-1ac4d00cf6b7" finished with status "complete"
 ```
@@ -172,7 +172,7 @@ do
     | .Networks[0].IP + ":" + (.Networks[0].DynamicPorts[0].Value | tostring)'
 done
 
-$ ./get_job_address.sh helloworld hello-task
+$ ./get_job_address.sh helloworld-v1 hello-task
 10.20.30.8:42957
 ```
 
@@ -180,7 +180,7 @@ $ ./get_job_address.sh helloworld hello-task
 Check that the job is running properly by calling it:
 ```
 $ curl http://10.20.30.8:42957
-Hello v1
+Hello v1!
 ```
 
 !SUB
@@ -231,7 +231,7 @@ doc: [/docs/jobspec/index.html](https://www.nomadproject.io/docs/jobspec/index.h
 Nomad allows us to easily do **rolling updates**. Add the **update block** and change the **version** of our job, to do a rolling update.
 
 ```
-job "helloworld" {
+job "helloworld-v2" {
   datacenters = ["dc1"]
   type = "service"
 
@@ -245,7 +245,7 @@ job "helloworld" {
     task "hello-task" {
       driver = "docker"
       config {
-        image = "cargonauts/helloworld:v2"
+        image = "eveld/helloworld:2.0.0"
 ...
 ```
 doc: [/docs/jobspec/index.html](https://www.nomadproject.io/docs/jobspec/index.html)
