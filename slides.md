@@ -14,7 +14,10 @@
   </tr>
   <tr><td>&nbsp;</td></tr>
   <tr>
-    <td>**Slides**</td><td>[http://nauts.io/nomad-meetup](http://nauts.io/nomad-meetup)</td>
+    <td>**Slides**</td><td>[http://nauts.io/nomad-meetup](http://nauts.io/nomad-meetup) branch: gh-pages</td>
+  </tr>
+  <tr>
+    <td>**Files**</td><td>[http://nauts.io/nomad-meetup](http://nauts.io/nomad-meetup) branch: master</td>
   </tr>
 </table>
 </center>
