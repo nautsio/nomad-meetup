@@ -12,6 +12,9 @@
   <tr>
     <td>**Erik Veld**</td><td>*[eveld@xebia.com](mailto:eveld@xebia.com)*</td>
   </tr>
+  <tr>
+    [http://nauts.io/nomad-meetup](http://nauts.io/nomad-meetup)
+  </tr>
 </table>
 </center>
 
