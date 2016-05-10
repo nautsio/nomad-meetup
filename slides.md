@@ -147,15 +147,21 @@ JOB=$1
 TASK=$2
 
 # This obviously only works if there is just one port exposed per task.
-for ALLOC in $(curl -s "$NOMAD_ADDR/v1/job/$JOB/allocations" | jq -r '.[] | select(.TaskStates.'"$TASK"'.State != "dead") | .ID'); do
-  curl -s "$NOMAD_ADDR/v1/allocation/$ALLOC" | jq -r '.TaskResources.'"$TASK"' | .Networks[0].IP + ":" + (.Networks[0].DynamicPorts[0].Value | tostring)'
+for ALLOC in $(curl -s "$NOMAD_ADDR/v1/job/$JOB/allocations" \
+  | jq -r '.[] \
+  | select(.TaskStates.'"$TASK"'.State != "dead") \
+  | .ID');
+do
+  curl -s "$NOMAD_ADDR/v1/allocation/$ALLOC" \
+    | jq -r '.TaskResources.'"$TASK"' \
+    | .Networks[0].IP + ":" + (.Networks[0].DynamicPorts[0].Value | tostring)'
 done
 
 $ ./get_job_address.sh helloworld helloworld
 10.20.30.8:42957
 ```
 
-<br />
+!SUB
 Check that the job is running properly by calling it:
 ```
 $ curl http://10.20.30.8:42957
