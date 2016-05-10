@@ -131,8 +131,12 @@ Other
   margin: 10px 0;
 }
 
-.reveal dt {}
-.reveal dd {}
+.reveal dt {
+  display: inline-block;
+}
+.reveal dd {
+  display: inline-block;
+}
 
 .reveal blockquote {}
 .reveal q {}

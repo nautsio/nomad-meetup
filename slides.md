@@ -6,6 +6,7 @@
   <dt>**Mark van Holsteijn**</dt><dd>*[mvanholstein@xebia.com](mvanholstein@xebia.com)*</dd>
   <dt>**Erik Veld**</dt><dd>*[eveld@xebia.com](eveld@xebia.com)*</dd>
 </dl>
+
 !SLIDE
 <!-- .slide: data-background="#6C1D5F" -->
 <center>![Nomad](img/nomad-logo.png)</center>
