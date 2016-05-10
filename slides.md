@@ -1,5 +1,5 @@
 <!-- .slide: data-background="#6C1D5F" -->
-<center><div style="width: 100%; height: auto;"><img src="img/xebia.svg"/></div></center>
+<center><div style="width: 75%; height: auto;"><img src="img/xebia.svg"/></div></center>
 <br />
 <center>
 <table>
