@@ -399,3 +399,5 @@ Since losing a machine is not critical anymore, we can take advantage of the nod
 !SLIDE
 <!-- .slide: data-background="#6C1D5F" -->
 <center>![HashiConf](img/hashiconf.png)</center>
+wil je het laatste nieuws rondom Nomad en andere HashiCorp products horen en best practices oppikken, kom dan van 13-15 June naar HashiConfEU
+<center>Want to get the latest news about Nomad and other HashiCorp products, and learn the best practises? Come to HashiConf EU the 13th-15th of June.</center>
