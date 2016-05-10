@@ -7,7 +7,7 @@
     <td>**Bastiaan Bakker**</td><td>*[bbakker@xebia.com](mailto:bbakker@xebia.com)*</td>
   </tr>
   <tr>
-    <td>**Mark van Holsteijn**</td><td>*[mvanholstein@xebia.com](mailto:mvanholstein@xebia.com)*</td>
+    <td>**Mark van Holsteijn**</td><td>*[mvanholsteijn@xebia.com](mailto:mvanholsteijn@xebia.com)*</td>
   </tr>
   <tr>
     <td>**Erik Veld**</td><td>*[eveld@xebia.com](mailto:eveld@xebia.com)*</td>
@@ -291,11 +291,12 @@ are available and **where**, and which resources a job needs. Nomad currently ca
 !SUB
 # Available Resources
 - These are resources Nomad detects at **startup time**
-- Processes not scheduled by Nomad are not considered
+- Since recent versions Nomad **fingerprints periodically**
+- Processes not scheduled by Nomad are **not** considered
 - Currently it is **not** possible to query unallocated resources
 
 !SUB
-The 'node' endpoint shows the detected resources:
+The "node" endpoint shows the detected resources:
 
 ```
 $ curl http://localhost:4646/v1/node/0af1abf0-d55c-3923-188f-495bed729a4e | jq .Resources
@@ -361,6 +362,28 @@ d8211338  dc1   bbakker-farm-02-17v3  docker  false  ready
 ee340c8d  sys1  bbakker-nomad-03      system  false  ready
 dfdd7c8e  sys1  bbakker-nomad-01      system  false  ready
 0d470098  sys1  bbakker-nomad-02      system  false  ready
+```
+
+!SUB
+On each machine there is a script that is called on shutdown, which drains a node and waits until all applications are moved.
+```
+#!/bin/bash
+NOMAD_ADDR="http://${1:-localhost}:4646"
+NODE_ID=$(curl -s $NOMAD_ADDR/v1/agent/self | jq -r .stats.client.node_id)
+
+echo enable node drain
+curl -s -X POST $NOMAD_ADDR/v1/node/$NODE_ID/drain?enable=true > /dev/null
+
+echo wait for drain of all allocations
+for t in {0..59} ; do
+	ALLOCS=$(curl -s $NOMAD_ADDR/v1/node/$NODE_ID/allocations | jq '[.[] | select(.ClientStatus == "running")] | length')
+	echo remaining allocs is $ALLOCS
+	if [ "0" == "$ALLOCS" ] ; then
+		echo node drain completed
+		exit 0
+	fi
+	sleep 1
+done
 ```
 
 !SUB
