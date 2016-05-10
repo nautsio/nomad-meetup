@@ -92,7 +92,6 @@ job "helloworld" {
         cpu = 100
         memory = 200
         network { port "http" {} }
-
 ...
 ```
 jobs/helloworld-v1.nomad
@@ -126,9 +125,7 @@ $ curl -s $NOMAD_ADDR/v1/job/helloworld/allocations | jq .
 }
 ```
 
-Search for the allocations where **.TaskStates.helloworld.State** is not "dead" and collect their **.ID**'s.
-
-For each of those .ID's:
+Search for the allocations where **.TaskStates.helloworld.State** is not "dead" and collect their **.ID**'s. For each of those .ID's:
 ```
 $ curl -s $NOMAD_ADDR/v1/allocation/<ID> | jq .
 {
@@ -213,7 +210,7 @@ doc: [/docs/jobspec/index.html](https://www.nomadproject.io/docs/jobspec/index.h
 
 !SUB
 # Updating
-Nomad allows us to easily do **rolling updates**. Lets add the **update block** and change the **version** of our helloworld job, in order to try to do a rolling update.
+Nomad allows us to easily do **rolling updates**. Add the **update block** and change the **version** of our job, to do a rolling update.
 
 ```
 job "helloworld" {
