@@ -234,14 +234,13 @@ doc: [/docs/jobspec/index.html](https://www.nomadproject.io/docs/jobspec/index.h
 
 !SLIDE
 <!-- .slide: data-background="#6C1D5F" -->
-# Auto discovery
+# Service discovery
 
 !SUB
 - Uses Consul to expose services and works **without bootstrapping**
 - Defined **inside the job description**
 - **No external tools** such as Registrator needed
 
-<br />
 ```
 service {
   name = "${TASKGROUP}-helloworld-v1"
@@ -262,8 +261,8 @@ doc: [/docs/jobspec/servicediscovery.html](https://www.nomadproject.io/docs/jobs
 # Resource management
 
 !SUB
-In order to schedule jobs on the right nodes, Nomad needs to know which resources
-are available and where, and which resources a job needs. Nomad currently can manage the following resources:
+In order to schedule jobs on the right nodes, Nomad needs to know **which resources**
+are available and **where**, and which resources a job needs. Nomad currently can manage the following resources:
 - CPU cycles
 - memory
 - Disk space
@@ -273,7 +272,7 @@ are available and where, and which resources a job needs. Nomad currently can ma
 
 !SUB
 # Available Resources  
-The 'node' endpoint shows detected resources:
+The 'node' endpoint shows the detected resources:
 
 ```
 $ curl http://localhost:4646/v1/node/0af1abf0-d55c-3923-188f-495bed729a4e | jq .Resources
@@ -299,15 +298,13 @@ doc: https://www.nomadproject.io/docs/http/node.html
 
 !SUB
 # Available Resources
-
-- These are resources Nomad detects at startup time
+- These are resources Nomad detects at **startup time**
 - Processes not scheduled by Nomad are not considered
-- Currently it is **not** possible to query unallocated resources.
+- Currently it is **not** possible to query unallocated resources
 
 !SUB
 # Reserving Resources
-
-Jobs can specify which and how many resources the need. Nomad the may instruct
+Jobs can specify **which** and **how many** resources the need. Nomad the may instruct
 the task driver (e.g. Docker) to not let the process use more.
 
 For example the default a job may specify (within the 'task' section):
