@@ -14,7 +14,7 @@
   </tr>
   <tr><td>&nbsp;</td></tr>
   <tr>
-    <td colspan="2">[http://nauts.io/nomad-meetup](http://nauts.io/nomad-meetup)</td>
+    <td>**Slides**</td><td>[http://nauts.io/nomad-meetup](http://nauts.io/nomad-meetup)</td>
   </tr>
 </table>
 </center>
