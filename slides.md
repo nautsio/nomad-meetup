@@ -1,7 +1,8 @@
 <!-- .slide: data-background="#6C1D5F" -->
 <center>![Nomad](img/xebia.svg)</center>
-Bastiaan Bakker - bbakker@xebia.com
-Mark van Holsteijn - mvanholstein@xebia.com
+<br />
+Bastiaan Bakker - bbakker@xebia.com   
+Mark van Holsteijn - mvanholstein@xebia.com   
 Erik Veld - eveld@xebia.com
 
 !SLIDE
