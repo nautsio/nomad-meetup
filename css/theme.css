@@ -60,6 +60,10 @@ Headers
   color: #EFEFEF;
 }
 
+.reveal section[data-background="#6C1D5F"] b, .reveal section[data-background="#6C1D5F"] strong {
+  color: #20B2A6;
+}
+
 .reveal h1 {
   font-size: 2em;
 }
