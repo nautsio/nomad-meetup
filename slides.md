@@ -1,4 +1,8 @@
 <!-- .slide: data-background="#6C1D5F" -->
+<center>![Nomad](img/xebia.svg)</center>
+
+!SLIDE
+<!-- .slide: data-background="#6C1D5F" -->
 <center>![Nomad](img/nomad-logo.png)</center>
 
 !SLIDE
