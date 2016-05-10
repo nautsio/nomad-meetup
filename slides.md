@@ -1,13 +1,5 @@
 <!-- .slide: data-background="#6C1D5F" -->
-<br />
-<br />
 # Nomad
-<br />
-<br />
-<br />
-[bastiaan@nauts.io](mailto:bastiaan@nauts.io)   
-[erik@nauts.io](mailto:erik@nauts.io)   
-[mark@nauts.io](mailto:mark@nauts.io)
 
 !SLIDE
 Nomad is a tool for **managing a cluster of machines and running applications on them**. Nomad **abstracts away machines** and the location of applications, and instead **enables users to declare what they want to run** and Nomad handles where they should run and how to run them.
