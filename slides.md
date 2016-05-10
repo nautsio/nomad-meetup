@@ -3,7 +3,11 @@
 <br />
 <dl>
   <dt>**Bastiaan Bakker**</dt><dd>*[bbakker@xebia.com](mailto:bbakker@xebia.com)*</dd>
+</dl>
+<dl>
   <dt>**Mark van Holsteijn**</dt><dd>*[mvanholstein@xebia.com](mvanholstein@xebia.com)*</dd>
+</dl>
+<dl>
   <dt>**Erik Veld**</dt><dd>*[eveld@xebia.com](eveld@xebia.com)*</dd>
 </dl>
 
