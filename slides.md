@@ -1,5 +1,5 @@
 <!-- .slide: data-background="#6C1D5F" -->
-<center>![Nomad](img/xebia.svg)</center>
+<center>![Xebia](img/xebia.svg)</center>
 <br />
 <table>
   <tr>
@@ -287,7 +287,12 @@ are available and **where**, and which resources a job needs. Nomad currently ca
 - Network IO
 
 !SUB
-# Available Resources  
+# Available Resources
+- These are resources Nomad detects at **startup time**
+- Processes not scheduled by Nomad are not considered
+- Currently it is **not** possible to query unallocated resources
+
+!SUB
 The 'node' endpoint shows the detected resources:
 
 ```
@@ -311,12 +316,6 @@ $ curl http://localhost:4646/v1/node/0af1abf0-d55c-3923-188f-495bed729a4e | jq .
 ```
 
 doc: https://www.nomadproject.io/docs/http/node.html
-
-!SUB
-# Available Resources
-- These are resources Nomad detects at **startup time**
-- Processes not scheduled by Nomad are not considered
-- Currently it is **not** possible to query unallocated resources
 
 !SUB
 # Reserving Resources
@@ -363,6 +362,10 @@ dfdd7c8e  sys1  bbakker-nomad-01      system  false  ready
 ```
 
 !SUB
+# Job failures
+- *Are jobs correctly restarted?*
+
+!SUB
 # Client failures
 Example of a killed node in the docker farm:
 ```
@@ -388,3 +391,7 @@ f99014c9  sys1        bbakker-nomad-02      system  false  ready
 # Machine failures
 - *Can scheduling still continue?*
 - *Are jobs correctly transferred to other nodes?*
+
+!SUB
+# Preemptible instances
+Since losing a machine is not critical anymore, we can take advantage of the node-drain feature to use **preemptible instances** at our cloud provider. This will call node-drain **30 seconds** before the node shuts down and **moves all the applications** to healthy nodes.
