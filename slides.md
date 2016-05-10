@@ -66,6 +66,10 @@ doc: [/docs/drivers/index.html](https://www.nomadproject.io/docs/drivers/index.h
 
 !SLIDE
 <!-- .slide: data-background="#6C1D5F" -->
+# The Setup
+
+!SLIDE
+<!-- .slide: data-background="#6C1D5F" -->
 # Jobs
 
 !SUB
