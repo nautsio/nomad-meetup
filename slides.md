@@ -17,7 +17,7 @@
     <td>**Slides**</td><td>[http://nauts.io/nomad-meetup](http://nauts.io/nomad-meetup)</td>
   </tr>
   <tr>
-    <td>**Files**</td><td>[http://www.github.com/nautsio/nomad-meetup](http://www.github.com/nautsio/nomad-meetup)</td>
+    <td>**Files**</td><td>[http://github.com/nautsio/nomad-meetup](http://github.com/nautsio/nomad-meetup)</td>
   </tr>
 </table>
 </center>
