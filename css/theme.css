@@ -60,11 +60,6 @@ Headers
   color: #EFEFEF;
 }
 
-.reveal section[data-background="#6C1D5F"] a {
-  color: #F5F5F5;
-  text-decoration: none;
-}
-
 .reveal h1 {
   font-size: 2em;
 }
@@ -181,16 +176,16 @@ Images
 Navigation controls
 */
 .reveal .controls .navigate-left, .reveal .controls .navigate-left.enabled, .reveal .controls .navigate-left.enabled:hover {
-  border-right-color: #333333;
+  border-right-color: #20B2A6;
 }
 .reveal .controls .navigate-right, .reveal .controls .navigate-right.enabled, .reveal .controls .navigate-right.enabled:hover {
-  border-left-color: #333333;
+  border-left-color: #20B2A6;
 }
 .reveal .controls .navigate-up, .reveal .controls .navigate-up.enabled, .reveal .controls .navigate-up.enabled:hover {
-  border-bottom-color: #333333;
+  border-bottom-color: #20B2A6;
 }
 .reveal .controls .navigate-down, .reveal .controls .navigate-down.enabled, .reveal .controls .navigate-down.enabled:hover {
-  border-top-color: #333333;
+  border-top-color: #20B2A6;
 }
 
 /*
