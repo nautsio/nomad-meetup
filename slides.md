@@ -1,7 +1,8 @@
 <!-- .slide: data-background="#6C1D5F" -->
-<center>![Xebia](img/xebia.svg)</center>
+<center><div style="width: 100%; height: auto;"><img src="img/xebia.svg"/></div></center>
 <br />
-<center><table>
+<center>
+<table>
   <tr>
     <td>**Bastiaan Bakker**</td><td>*[bbakker@xebia.com](mailto:bbakker@xebia.com)*</td>
   </tr>
@@ -11,7 +12,8 @@
   <tr>
     <td>**Erik Veld**</td><td>*[eveld@xebia.com](eveld@xebia.com)*</td>
   </tr>
-</table></center>
+</table>
+</center>
 
 !SLIDE
 <!-- .slide: data-background="#6C1D5F" -->
