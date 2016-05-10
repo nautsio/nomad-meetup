@@ -45,10 +45,6 @@ Nomad is a tool for **managing a cluster of machines and running applications on
 - **Node, Agent, Server & Client**: A Client of Nomad and a Node are a machine that tasks can be run on. Nomad servers are the brains of the cluster. An Agent can be run in either Client or Server mode.
 - **Task Driver**: A Driver represents the basic means of executing your Tasks.
 
-!SLIDE
-<!-- .slide: data-background="#6C1D5F" -->
-# Jobs
-
 !SUB
 # Job types
 - **Service**: The service scheduler is designed for scheduling long lived services that should never go down.
@@ -67,6 +63,10 @@ doc: [/docs/jobspec/schedulers.html](https://www.nomadproject.io/docs/jobspec/sc
 - **Qemu**: Start a Virtual Machine
 
 doc: [/docs/drivers/index.html](https://www.nomadproject.io/docs/drivers/index.html)
+
+!SLIDE
+<!-- .slide: data-background="#6C1D5F" -->
+# Jobs
 
 !SUB
 # Creating
@@ -325,7 +325,7 @@ doc: https://www.nomadproject.io/docs/http/node.html
 Jobs can specify **which** and **how many** resources the need. Nomad the may instruct
 the task driver (e.g. Docker) to not let the process use more.
 
-For example the default a job may specify (within the 'task' section):
+For example the default a job may specify (within the "task" section):
 
 ```
 resources {
